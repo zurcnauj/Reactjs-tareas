@@ -1,10 +1,10 @@
 import React from 'react'
 import './Menu.css'
 
-const Menu = ({setVistaActual,userName}) =>{
+const Menu = ({setVistaActual,username}) =>{
     return(
         <div className = "menu_contenedor">
-            <p className = "menu_username">{userName}</p>
+            <p className = "menu_username">{username}</p>
             <ul className = "menu_items">
                 <li 
                     className = "menu_item menu_boton"

@@ -3,7 +3,7 @@ import './TareaListado.css'
 // Components
 import TareaNota from './TareaNota'
 
-const TareaListado = ({nombre, listaTareas}) =>{
+const TareaListado = ({username,nombre, listaTareas,resetLista}) =>{
     return(
         <div className="tareaListado_contenedor">
             <p className="tareasListado_nombre">{nombre}</p>
@@ -11,8 +11,10 @@ const TareaListado = ({nombre, listaTareas}) =>{
                 {
                     listaTareas.map( tarea => ( 
                         <TareaNota
+                            username = {username}
                             key = {tarea.id}
                             tarea = {tarea}
+                            resetLista = {resetLista}
                         />
                     ))
                 }

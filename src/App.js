@@ -9,7 +9,7 @@ import Tareas from './components/Tareas'
 
 function App() {
   const [vistaActual, setVistaActual] = useState(0)
-  const [userName, setUserName] = useState("Zurcnauj")
+  const [username, setUsername] = useState("Zurcnauj")
   const [listaTareas, setListaTareas] = useState([
     { id:"tarea 1", desCorta: "Descripcion corta", desLarga: "Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga", creador:"Usuario 01", estado: "pendiente", encargado: null },
     { id:"tarea 2", desCorta: "Descripcion corta", desLarga: "Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga Descripcion larga", creador:"Usuario 01", estado: "pendiente", encargado: null },
@@ -25,12 +25,13 @@ function App() {
         retu = 
           <Login
           setVistaActual = {setVistaActual}
-          setUserName = {setUserName}
+          setUsername = {setUsername}
           />
         break;
       case 1:
         retu = 
           <Tareas 
+            username = {username} 
             listaTareas = {listaTareas}
             setListaTareas = {setListaTareas}
           />
@@ -38,7 +39,7 @@ function App() {
       case 2:
         retu = 
           <NuevaTarea 
-          userName = {userName}
+          username = {username}
           listaTareas = {listaTareas}
           setListaTareas = {setListaTareas}
           />
@@ -54,7 +55,7 @@ function App() {
       {vistaActual !== 0?
         <Menu 
           setVistaActual = {setVistaActual}
-          userName = {userName}
+          username = {username}
         />
         : null
       }

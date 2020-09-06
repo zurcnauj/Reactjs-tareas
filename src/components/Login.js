@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Login.css'
 
-const Login = ({setVistaActual,setUserName}) =>{
+const Login = ({setVistaActual,setUsername}) =>{
     const [error, setError] = useState(false)
     const [user, setUser] = useState("")
 
@@ -11,7 +11,7 @@ const Login = ({setVistaActual,setUserName}) =>{
         }
         else{
             setError(false)
-            setUserName(user)
+            setUsername(user)
             setVistaActual(1)
         }
     }

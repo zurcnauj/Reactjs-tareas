@@ -21,6 +21,7 @@
 }
 
 .tareaNota_extra{
+    margin-top: 20px;
     border-top: 3px solid var(--amarillo_oscuro);
 }
 
@@ -32,6 +33,10 @@
 }
 
 .tareaNota_boton:hover{
-    cursor: pointer;
     background-color: var(--amarillo);
+    cursor: pointer;
+}
+
+@media(max-width:1200px){
+
 }
