@@ -2,6 +2,8 @@
     --amarillo: #ee6;
     --amarillo_oscuro: #cc0;
     --blanco: #fafafa;
+    --gris: #aaa;
+    --verde:#7f7;
 }
 
 .TareaNota_contenedor{
@@ -9,9 +11,19 @@
     padding: 10px 5px;
     border: 2px solid var(--amarillo_oscuro);
     border-radius: 5px 15px 5px 5px;
-    background-color: var(--amarillo);
 }
 
+.tareaNota_gris{
+    background-color: var(--gris);
+}
+
+.tareaNota_amarillo{
+    background-color: var(--amarillo); 
+}
+
+.tareaNota_verde{
+    background-color: var(--verde);
+}
 .TareaNota_id{
     border-radius: 5px 15px 5px 5px;
     background-color: var(--amarillo_oscuro);
@@ -38,5 +50,7 @@
 }
 
 @media(max-width:1200px){
-
+    .TareaNota_contenedor{
+        width: 350px;
+    }
 }

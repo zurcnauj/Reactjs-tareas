@@ -24,6 +24,9 @@
 
 @media(max-width:1200px){
     .tareaListado_listado{
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
         min-height: 200px;
     }
 }

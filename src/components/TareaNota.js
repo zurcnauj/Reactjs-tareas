@@ -16,6 +16,18 @@ const TareaNota = ({username, tarea, resetLista}) => {
         resetLista()
     }
 
+    const setClassName = () => {
+        let retu 
+        if(tarea.estado === "pendiente"){
+            retu = "tareaNota_gris"
+        }
+        else if(tarea.estado === "proceso"){
+            retu = "tareaNota_amarillo"
+        }else{
+            retu = "tareaNota_verde"
+        }
+        return retu
+    }
     const botonera = () =>{
         let retu = null
         if(tarea.estado === "pendiente"){
@@ -42,7 +54,7 @@ const TareaNota = ({username, tarea, resetLista}) => {
 
     return(
         <div 
-            className = "TareaNota_contenedor"
+            className = {`TareaNota_contenedor ${setClassName()}`}
             onMouseEnter = {() => setActivo(false)}
             onMouseLeave = {() => setActivo(true)}
         >
