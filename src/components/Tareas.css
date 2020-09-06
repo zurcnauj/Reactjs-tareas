@@ -1,0 +1,28 @@
+:root{
+    --blanco: #fafafa;
+    --rojo: #f33;
+    --verde: #3f3;
+    --fontSize: 1.7em;
+}
+
+.tareas_contenedor{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.tareas_tarealistado{
+    width: 33%;
+}
+
+@media(max-width:1200px){
+    .tareas_contenedor{
+        width: 95%;
+        flex-direction: column;
+    }
+    .tareas_tarealistado{
+        width: 100%;
+    }
+}

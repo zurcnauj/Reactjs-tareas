@@ -1,0 +1,45 @@
+:root{
+    --blanco: #fafafa;
+    --rojo: #f33;
+    --verde: #3f3;
+    --fontSize: 1.7em;
+}
+
+.menu_contenedor{
+    width: 100%;
+    display: flex;
+}
+
+.menu_username{
+    padding: 5px 10px;
+    font-size: var(--fonSize);
+    color: var(--blanco);
+    border-right: 5px solid var(--blanco);
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+}
+
+.menu_item{
+    padding: 5px 10px;
+    border-right: 3px solid var(--blanco);
+    font-size: var(--fonSize);
+    color: var(--blanco);
+}
+
+.menu_logout{
+    padding: 5px 10px;    
+    position: absolute;
+    border-left: 2px solid var(--blanco);
+    right: 10px;
+    font-size: var(--fonSize);
+    color: var(--blanco);
+}
+
+.menu_boton:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+

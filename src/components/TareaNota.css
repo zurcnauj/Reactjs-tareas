@@ -1,0 +1,37 @@
+:root{
+    --amarillo: #ee6;
+    --amarillo_oscuro: #cc0;
+    --blanco: #fafafa;
+}
+
+.TareaNota_contenedor{
+    margin: 5px;
+    padding: 10px 5px;
+    border: 2px solid var(--amarillo_oscuro);
+    border-radius: 5px 15px 5px 5px;
+    background-color: var(--amarillo);
+}
+
+.TareaNota_id{
+    border-radius: 5px 15px 5px 5px;
+    background-color: var(--amarillo_oscuro);
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--blanco);
+}
+
+.tareaNota_extra{
+    border-top: 3px solid var(--amarillo_oscuro);
+}
+
+.tareaNota_boton{
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: var(--amarillo_oscuro);
+    color: var(--blanco);
+}
+
+.tareaNota_boton:hover{
+    cursor: pointer;
+    background-color: var(--amarillo);
+}

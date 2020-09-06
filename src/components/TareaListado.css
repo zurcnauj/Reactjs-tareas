@@ -1,0 +1,29 @@
+:root{
+    --blanco: #fafafa;
+}
+
+.tareaListado_contenedor{
+    border: 3px solid var(--blanco);
+    border-radius: 10px;
+}
+
+.tareasListado_nombre{
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--blanco);
+}
+
+.tareaListado_listado{
+    margin: 10px 5px 20px 5px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--blanco);
+}
+
+@media(max-width:1200px){
+    .tareaListado_listado{
+        min-height: 200px;
+    }
+}
